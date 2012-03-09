@@ -183,6 +183,9 @@
         info.innerHTML = xhr.responseText;
         info.style.display = 'block'
       }
+      function goTo(address) {
+        location.href = address;
+      }
     </script>
   </head>
   <body>
@@ -196,6 +199,7 @@
               <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
               <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
               <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
+              <li><a href="javascript: goTo('users')">Go to Users list</a></li>
             </ul>
           </li>
         </ul>
